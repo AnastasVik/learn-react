@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
-    const [hahaLol, setHahaLol] = useState("ХАХА ЛОЛ");
+    const [hahaLol, setHahaLol] = useState("ХАХА ЛОЛ!");
 
     return (
         <div className="App">

@@ -1,18 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+
+import MyInput from "./components/MyInput/MyInput";
+import Button from "./components/Button/Button";
 
 function App() {
-    const [hahaLol, setHahaLol] = useState("ХАХА ЛОЛ");
-
     return (
         <div className="App">
-            <h1>{hahaLol}</h1>
-            <input
-                type="text"
-                defaultValue={hahaLol}
-                onChange={(e) => {
-                    setHahaLol(e.target.value);
-                }}
-            />
+            <MyInput value="Привет АХАХАХА!" off={false} />
+            <Button off={false}>Привет мир!</Button>
         </div>
     );
 }
